@@ -1,0 +1,15 @@
+Title: Et maintenant MarioGPT, une IA qui génère de nouveaux niveaux de Super Mario 
+ImageLink: https://cdn.futura-sciences.com/cdn-cgi/image/width=1920,quality=50,format=auto/sources/images/Super%20Mario%20Bros.jpeg
+Category: Technologie
+CreationDate: 2023-02-09
+CreatorUsername: Daniel Ichbiah
+Content:
+Il suffit actuellement d’ajouter le terme « GPT » à une création pour susciter l’intérêt. MarioGPT est en mesure de créer des niveaux originaux d’un jeu ultra minimaliste. Mais pas de quoi révolutionner l’univers du jeu vidéo…
+
+Sorti en 1985, le jeu Super Mario Bros a fait le succès de la console NES sortie deux ans plus tôt au Japon et a établi Nintendo comme l&#039;empire du jeu vidéo -- jusqu&#039;à l&#039;arrivée de Sony et de sa PlayStation dix ans plus tard. Encore aujourd&#039;hui, Super Mario Bros est le 7ejeu le plus vendu de tous les temps avec plus de 57 millions d&#039;unités écoulées.Qu&#039;on se le dise : si un tel jeu dit « de plateau » (le héros saute de plate-forme en plate-forme) est addictif, son principe est fort minimaliste et assez prédictible.
+
+Des chercheurs de l&#039;Université de Cornell (New York) ont néanmoins voulu  profiter de l’engouement autour de ChatGPT pour présenter leur création, appelée MarioGPT. Cet outil a ingurgité l&#039;ensemble des niveaux de Super Mario Bros et Super Mario Bros : The Lost Levels.Qu&#039;avons-nous à l&#039;arrivée ? Une interface de conversation programmée en Python et dont le code est accessible sur Github. Si on parvient à l&#039;installer comme il se doit et à exécuter ce code, il devient possible de lui demander la création de niveaux en indiquant des termes comme « beaucoup d&#039;ennemis, forte élévation, peu de tuyaux ». Rien de renversant puisqu&#039;il s&#039;agit de niveaux basiques pour un jeu à la mode des années 1980.
+
+Pour les exploiter réellement sur une NES, il faudrait pouvoir convertir le résultat en un code assimilable par cette console. Nous en sommes loin. N&#039;allons donc pas croire que cette création va révolutionner le jeu vidéo et créer des scénarios exploitables pour un épisode de la série Assassin&#039;s Creed ou autre.
+
+Dans un essai consacré à leur création, les chercheurs ont rédigé un article où ils expliquent leur démarche et concluent ainsi : « Cette génération n&#039;est pas parfaite, mais il s&#039;agit d&#039;une première étape encourageante pour créer des niveaux plus complexes, mais jouables ».
