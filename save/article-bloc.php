@@ -1,22 +1,16 @@
 <?php
-// Define article file path
 $articleDir = 'articles/*.txt';
 
-// Set category filter
 $category = isset($_GET['category']) ? $_GET['category'] : '';
 
-// Set keyword filter
 $keywords = isset($_GET['keywords']) ? $_GET['keywords'] : '';
 
-// Get all articles
 $articles = glob($articleDir);
 
-// Sort articles by creation date
 usort($articles, function($a, $b) {
     return filemtime($b) - filemtime($a);
 });
 
-// Filter articles by category and keyword
 $filteredArticles = array_filter($articles, function($article) use ($category, $keywords) {
     $lines = file($article);
     $categoryLine = trim(str_replace('Category: ', '', $lines[2]));
@@ -26,10 +20,8 @@ $filteredArticles = array_filter($articles, function($article) use ($category, $
     return $matchCategory && $matchKeywords;
 });
 
-// Limit articles to 5
 $filteredArticles = array_slice($filteredArticles, 0, 5);
 
-// Display articles
 $lastCategory = '';
 foreach ($filteredArticles as $article) {
     $lines = file($article);
@@ -41,7 +33,6 @@ foreach ($filteredArticles as $article) {
     $creatorUsername = trim(str_replace('Creator username: ', '', $lines[4]));
     $content = trim(str_replace('Content:', '', implode("\n", array_slice($lines, 5))));
 
-    // Display category header if category exists and is different from last category
     if (!empty($category) && $category != $lastCategory) {
         echo '<h1>' . $category . '</h1>';
         $lastCategory = $category;

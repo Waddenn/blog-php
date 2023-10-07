@@ -108,13 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const article = thumb.getAttribute("data-article");
       const likeCountElement = thumb.nextElementSibling.querySelector("span");
 
-      // Ajouter l'animation
       thumb.classList.add("thumb-animation");
 
-      // Ajouter la classe pour changer la couleur du pouce
       thumb.classList.add("thumb-clicked");
 
-      // Supprimer l'animation après qu'elle soit terminée
       setTimeout(() => {
         thumb.classList.remove("thumb-animation");
       }, 300);
